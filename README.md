@@ -1,9 +1,9 @@
 # XcodeCareer
     A plug-in for Xcode which can record how much lines and how long you've code.
-    Press `Shift + P` to take a look at your aachievement.    
+    Press `Shift + P` to take a look at your achievement.    
 
 ## Rules
-    1.The plug-in is initialized with Useds` = 0.
+    1.The plug-in is initialized with `TotalLines` = `TotalSeconds` = 0.
     2.Codes created by Xcode or imported from outside are ignored.
     3.Only those codes which are written by yourself are accumulated.
     4.It means everytime you press 'Enter' and increase a line in Xcode will increase the number of `TotalLines`.
