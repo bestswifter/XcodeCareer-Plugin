@@ -12,6 +12,9 @@
 		684963531B1BE3AC009DA4F5 /* XcodeCareer.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 684963521B1BE3AC009DA4F5 /* XcodeCareer.xcscheme */; };
 		684963561B1BE3AC009DA4F5 /* XcodeCareer.m in Sources */ = {isa = PBXBuildFile; fileRef = 684963551B1BE3AC009DA4F5 /* XcodeCareer.m */; };
 		684963591B1BE3AC009DA4F5 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 684963581B1BE3AC009DA4F5 /* NSObject_Extension.m */; };
+		684963651B1BE42D009DA4F5 /* DataIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 684963601B1BE42D009DA4F5 /* DataIO.m */; };
+		684963661B1BE42D009DA4F5 /* NSTimer+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 684963631B1BE42D009DA4F5 /* NSTimer+Operations.m */; };
+		684963671B1BE42D009DA4F5 /* Statistics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 684963641B1BE42D009DA4F5 /* Statistics.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,12 @@
 		684963551B1BE3AC009DA4F5 /* XcodeCareer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeCareer.m; sourceTree = "<group>"; };
 		684963571B1BE3AC009DA4F5 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
 		684963581B1BE3AC009DA4F5 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		6849635F1B1BE42D009DA4F5 /* DataIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataIO.h; sourceTree = "<group>"; };
+		684963601B1BE42D009DA4F5 /* DataIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataIO.m; sourceTree = "<group>"; };
+		684963611B1BE42D009DA4F5 /* XcodeCareerPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeCareerPrefixHeader.pch; sourceTree = "<group>"; };
+		684963621B1BE42D009DA4F5 /* NSTimer+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Operations.h"; sourceTree = "<group>"; };
+		684963631B1BE42D009DA4F5 /* NSTimer+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Operations.m"; sourceTree = "<group>"; };
+		684963641B1BE42D009DA4F5 /* Statistics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Statistics.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,11 @@
 				684963551B1BE3AC009DA4F5 /* XcodeCareer.m */,
 				684963571B1BE3AC009DA4F5 /* NSObject_Extension.h */,
 				684963581B1BE3AC009DA4F5 /* NSObject_Extension.m */,
+				6849635F1B1BE42D009DA4F5 /* DataIO.h */,
+				684963601B1BE42D009DA4F5 /* DataIO.m */,
+				684963611B1BE42D009DA4F5 /* XcodeCareerPrefixHeader.pch */,
+				684963621B1BE42D009DA4F5 /* NSTimer+Operations.h */,
+				684963631B1BE42D009DA4F5 /* NSTimer+Operations.m */,
 				684963501B1BE3AC009DA4F5 /* Supporting Files */,
 			);
 			path = XcodeCareer;
@@ -80,6 +94,7 @@
 		684963501B1BE3AC009DA4F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				684963641B1BE42D009DA4F5 /* Statistics.plist */,
 				684963511B1BE3AC009DA4F5 /* Info.plist */,
 				684963521B1BE3AC009DA4F5 /* XcodeCareer.xcscheme */,
 			);
@@ -143,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				684963531B1BE3AC009DA4F5 /* XcodeCareer.xcscheme in Resources */,
+				684963671B1BE42D009DA4F5 /* Statistics.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,8 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684963661B1BE42D009DA4F5 /* NSTimer+Operations.m in Sources */,
 				684963561B1BE3AC009DA4F5 /* XcodeCareer.m in Sources */,
 				684963591B1BE3AC009DA4F5 /* NSObject_Extension.m in Sources */,
+				684963651B1BE42D009DA4F5 /* DataIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +256,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XcodeCareer/XcodeCareerPrefixHeader.pch";
 				INFOPLIST_FILE = XcodeCareer/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -252,6 +271,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = "$(HOME)";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XcodeCareer/XcodeCareerPrefixHeader.pch";
 				INFOPLIST_FILE = XcodeCareer/Info.plist;
 				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
