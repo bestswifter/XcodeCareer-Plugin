@@ -9,6 +9,8 @@
 #import "XcodeCareer.h"
 #import "NSTimer+Operations.h"
 #import "DataIO.h"
+#import "NSString+Transform.h"
+
 @interface XcodeCareer()
 
 @property (nonatomic, strong, readwrite) NSBundle *bundle;
@@ -98,7 +100,8 @@
     [self saveStatistics];
     
     NSAlert *alert = [[NSAlert alloc] init];
-    NSString *message = [[NSString alloc]initWithFormat:@"You have written %d lines of codes.\nYou have beening spending %d seconds in coding.",increaseLines,seconds];
+    NSString *time = [NSString getFormattedWithSeconds:seconds];
+    NSString *message = [[NSString alloc]initWithFormat:@"You have written %d lines of codes.\nYou have beening spending %@ in coding.",increaseLines,time];
     [alert setMessageText:message];
     [alert runModal];
 }

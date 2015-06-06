@@ -15,6 +15,7 @@
 		684963651B1BE42D009DA4F5 /* DataIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 684963601B1BE42D009DA4F5 /* DataIO.m */; };
 		684963661B1BE42D009DA4F5 /* NSTimer+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = 684963631B1BE42D009DA4F5 /* NSTimer+Operations.m */; };
 		684963671B1BE42D009DA4F5 /* Statistics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 684963641B1BE42D009DA4F5 /* Statistics.plist */; };
+		68D1E4CA1B238FC500664A78 /* NSString+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D1E4C91B238FC500664A78 /* NSString+Transform.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		684963621B1BE42D009DA4F5 /* NSTimer+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Operations.h"; sourceTree = "<group>"; };
 		684963631B1BE42D009DA4F5 /* NSTimer+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Operations.m"; sourceTree = "<group>"; };
 		684963641B1BE42D009DA4F5 /* Statistics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Statistics.plist; sourceTree = "<group>"; };
+		68D1E4C81B238FC500664A78 /* NSString+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Transform.h"; sourceTree = "<group>"; };
+		68D1E4C91B238FC500664A78 /* NSString+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Transform.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				684963601B1BE42D009DA4F5 /* DataIO.m */,
 				684963611B1BE42D009DA4F5 /* XcodeCareerPrefixHeader.pch */,
 				684963621B1BE42D009DA4F5 /* NSTimer+Operations.h */,
+				68D1E4C81B238FC500664A78 /* NSString+Transform.h */,
+				68D1E4C91B238FC500664A78 /* NSString+Transform.m */,
 				684963631B1BE42D009DA4F5 /* NSTimer+Operations.m */,
 				684963501B1BE3AC009DA4F5 /* Supporting Files */,
 			);
@@ -172,6 +177,7 @@
 				684963661B1BE42D009DA4F5 /* NSTimer+Operations.m in Sources */,
 				684963561B1BE3AC009DA4F5 /* XcodeCareer.m in Sources */,
 				684963591B1BE3AC009DA4F5 /* NSObject_Extension.m in Sources */,
+				68D1E4CA1B238FC500664A78 /* NSString+Transform.m in Sources */,
 				684963651B1BE42D009DA4F5 /* DataIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +305,7 @@
 				6849635E1B1BE3AC009DA4F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
